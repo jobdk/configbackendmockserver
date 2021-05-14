@@ -13,7 +13,7 @@ import java.nio.file.Files;
 public class StubController {
     @GetMapping("apisettings")
     public String getApiSetting() throws IOException {
-        File jsonFile = new File("/home/jobdk/02_blackforestdevs/Weiteres/configbackendmockserver/src/main/resources/apisettings.json");
+        File jsonFile = new File("../configbackendmockserver/src/main/resources/apisettings.json");
 
         return new String(Files.readAllBytes(jsonFile.toPath()));
     }
