@@ -1,0 +1,100 @@
+{
+  "sha": "9252f9ad7f01b5d80e2c346fd9140fdedf47f378",
+  "graphql": {
+    "playground": {
+      "page-title": "Suedbaden-Api",
+      "settings": {
+        "editor": {
+          "theme": "light"
+        }
+      },
+      "tabs": {
+        "JOURNEY_QUERY": {
+          "name": "Journey query",
+          "query": "classpath:playground/requests/get-journeys-query-max-parameters.graphql",
+          "variables": {
+            "departureLatitude": 48.048381,
+            "departureLongitude": 8.209198,
+            "arrivalLatitude": 48.087517,
+            "arrivalLongitude": 7.891595,
+            "dateTime": "2021-03-17T13:00:00+02:00",
+            "isArrivalDateTime": false,
+            "language": "de"
+          },
+          "maxResults": 5,
+          "departurePlaceholder": "Start",
+          "arrivalPlaceholder": "Ziel",
+          "maxPastDaysInCalendar": 0
+        },
+        "JOURNEY_SUBSCRIPTION": {
+          "name": "Journey subscription",
+          "query": "classpath:playground/requests/get-journeys-subscription-max-parameters.graphql",
+          "variables": {
+            "departureLatitude": 48.048381,
+            "departureLongitude": 8.209198,
+            "arrivalLatitude": 48.087517,
+            "dateTime": "2021-03-17T13:00:00+02:00",
+            "isArrivalDateTime": false,
+            "language": "de"
+          },
+          "maxResults": 5,
+          "departurePlaceholder": "Start",
+          "arrivalPlaceholder": "Ziel",
+          "maxPastDaysInCalendar": 0
+        },
+        "ADDRESS_AUTOCOMPLETION": {
+          "name": "Autocomplete addresses query",
+          "query": "classpath:playground/requests/get-autocomplete-addresses-query-max-parameters.graphql",
+          "variables": {
+            "text": "Freiburg im Breisgau",
+            "language": "de"
+          },
+          "maxResults": 10,
+          "layers": [
+            "venue",
+            "address",
+            "street",
+            "locality"
+          ]
+        },
+        "NEAREST_ADDRESSES": {
+          "name": "Nearest addresses query",
+          "query": "classpath:playground/requests/get-nearest-addresses-query-max-parameters.graphql",
+          "variables": {
+            "longitude": 8.209198,
+            "latitude": 48.048381,
+            "radiusInKilometers": 1.0,
+            "language": "de"
+          },
+          "maxResults": 10,
+          "layers": [
+            "venue",
+            "address",
+            "street",
+            "locality"
+          ]
+        },
+        "NEAREST_STATIONS": {
+          "name": "Nearest stations query",
+          "query": "classpath:playground/requests/get-nearest-stations-query-max-parameters.graphql",
+          "variables": {
+            "longitude": 8.209198,
+            "latitude": 48.048381,
+            "radiusInKilometers": 1.0,
+            "language": "de"
+          },
+          "maxResults": 10
+        },
+        "ALL_STATIONS": {
+          "name": "Get all stations query",
+          "query": "classpath:graphql/get-all-stations-query.graphql"
+        },
+        "OPERATING_AREA": {
+          "name": "Get operating area query",
+          "query": "classpath:graphql/get-polygon-query.graphql",
+          "bufferInMetres": 0
+        }
+      }
+    }
+  }
+}
